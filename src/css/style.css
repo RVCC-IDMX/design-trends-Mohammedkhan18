@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tilt+Prism&display=swap');
+
+
+
+    body{
+      background-color: hsl(0, 0%, 0%);
+    }
+   
+    .title {
+      color: hsl(0, 0%, 100%);
+      font-family: 'Tilt Prism';
+      font-size: 70px;
+    }
+  
+    .container {
+      padding: 100px 30px;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .image-stack::after {
+      content: ' ';
+      display: table;
+      clear: both;
+    }
+
+    .image-stack__item--top {
+      float: left;
+      width: 66%;
+      margin-right: -100%;
+      position: relative;
+      z-index: 1; // tells the browser to make this image on top
+  }
+
+  .image-stack__item--bottom {
+    float: right;
+    width: 75%;
+}
+
+
+
+    @supports (display: grid) {
+        body{
+          background-color: hsl(0, 0%, 0%);
+          grid-template-columns: min-content 1fr;
+          grid-template-rows: 60vh 1fr;
+        }
+
+        .image-stack{
+          .image-stack {
+            display: grid;
+            position: relative; // imperative for the overlapping to work
+            grid-template-columns: repeat(12, 1fr);
+          }
+          .image-stack__item--bottom {
+            grid-column: 4 / -1;
+            grid-row: 1;
+            width: 100%;
+          }
+
+          .image-stack__item--top {
+            grid-row: 1;
+            grid-column: 1 / span 8;
+            padding-top: 20%; // slightly arbitrary, keeps proportion once resized
+            width: 100%;
+          }
+    
+        }
+
+        } 
+

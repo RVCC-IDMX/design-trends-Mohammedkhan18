@@ -1,0 +1,19 @@
+/* Andrew Bell's CSS Reset
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h5,
+p,
+img,
+footer
+ {
+  margin: 0;
+}
