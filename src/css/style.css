@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tilt+Prism&display=swap');
+@font-face{
+  font-family: "Tilt Prism";
+  font-weight: 400;
+  src: url('../fonts/tiltprism-regular-variablefont_xrotyrot-webfont.woff2') format('woff2'),
+       url('../fonts/tiltprism-regular-variablefont_xrotyrot-webfont.woff') format('woff');
+}
 
 
 
@@ -20,7 +25,7 @@
     }
 
     img {
-      width: 100%;
+      min-width: 100%;
       display: block;
     }
 
@@ -32,7 +37,7 @@
 
     .image-stack__item--top {
       float: left;
-      width: 66%;
+      width: 46%;
       margin-right: -100%;
       position: relative;
       z-index: 1; // tells the browser to make this image on top
@@ -40,7 +45,7 @@
 
   .image-stack__item--bottom {
     float: right;
-    width: 75%;
+    width: 50%;
 }
 
 
@@ -61,14 +66,15 @@
           .image-stack__item--bottom {
             grid-column: 4 / -1;
             grid-row: 1;
-            width: 100%;
+            width: 60%;
+            margin-left: -50px;
           }
 
           .image-stack__item--top {
             grid-row: 1;
             grid-column: 1 / span 8;
             padding-top: 20%; // slightly arbitrary, keeps proportion once resized
-            width: 100%;
+            width: 30%;
           }
     
         }
