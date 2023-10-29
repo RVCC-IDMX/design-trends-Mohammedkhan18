@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Tilt Prism";
   font-weight: 400;
@@ -48,6 +49,19 @@ img {
   width: 50%;
 }
 
+.footer {
+  background-color: hsl(0, 0%, 0%);
+  font-family: 'Roboto';
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    font-size: clamp(0.8rem, 1vw + 0.75rem, 2rem);
+    box-sizing: border-box;
+    border: 10px double ;
+    border-radius: .5em;
+}
 
 
 
@@ -147,9 +161,39 @@ img {
     grid-column: 6;
     grid-row: 8;
   }
+
+  .footer {
+    background-color: hsl(0, 0%, 100%);
+    color: white;
+    font-family: 'Tilt Prism';
+    margin-top: 100px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      font-size: clamp(0.8rem, 1vw + 0.75rem, 2rem);
+      box-sizing: border-box;
+      border: 10px double black;
+      border-radius: 1em;
+  }
+
+  h5 {
+    text-decoration: none;
+    font-size: 1em;
+    padding-top: 10px;
+    color: black;
+  }
+  
+  .github {
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
+  
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
 .title{
   padding-top: 50px;
   font-size: 6em;
@@ -227,9 +271,38 @@ img {
     grid-column: 8;
     grid-row: 8;
   }
+
+  .footer {
+    background-color: hsl(0, 0%, 100%);
+    color: white;
+    font-family: 'Tilt Prism';
+    margin-top: 100px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      font-size: clamp(0.8rem, 1vw + 0.75rem, 2rem);
+      box-sizing: border-box;
+      border: 10px double black;
+      border-radius: 1em;
+  }
+
+  h5 {
+    text-decoration: none;
+    font-size: 1em;
+    padding-top: 10px;
+    color: black;
+  }
+  
+  .github {
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 200px) {
   .image-stack {
     display: grid;
     position: relative;
@@ -318,8 +391,37 @@ img {
     grid-column: 6;
     grid-row: 8;
   }
+
+  .footer {
+    background-color: hsl(0, 0%, 100%);
+    color: white;
+    font-family: 'Tilt Prism';
+    margin-top: 100px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      font-size: clamp(0.8rem, 1vw + 0.75rem, 2rem);
+      box-sizing: border-box;
+      border: 10px double black;
+      border-radius: 1em;
+  }
+
+  .h5 {
+    text-decoration: none;
+    font-size: 1em;
+    padding-top: 10px;
+    color: black;
+  }
+  
+  .github {
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+  }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 700px) {
   .title{
     margin-top: -55px;
     font-size: 6em;
@@ -397,5 +499,34 @@ img {
     h1 span:nth-child(10) {
       grid-column: 8;
       grid-row: 8;
+    }
+
+    .footer {
+      background-color: hsl(0, 0%, 100%);
+      color: white;
+      font-family: 'Tilt Prism';
+      margin-top: 220px;
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        font-size: clamp(0.8rem, 1vw + 0.75rem, 2rem);
+        box-sizing: border-box;
+        border: 10px double black;
+        border-radius: 1em;
+    }
+  
+    .h5 {
+      text-decoration: none;
+      font-size: 1em;
+      padding-top: 10px;
+      color: black;
+    }
+    
+    .github {
+      font-size: 1.5rem;
+      cursor: pointer;
+      
     }
   }
